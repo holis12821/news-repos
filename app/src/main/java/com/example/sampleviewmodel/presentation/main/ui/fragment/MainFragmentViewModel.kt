@@ -9,7 +9,6 @@ package com.example.sampleviewmodel.presentation.main.ui.fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
-import androidx.paging.map
 import com.example.sampleviewmodel.data.model.ArticlesItem
 import com.example.sampleviewmodel.domain.usecase.NewsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel

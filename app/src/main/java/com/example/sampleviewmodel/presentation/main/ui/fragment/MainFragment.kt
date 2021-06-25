@@ -2,7 +2,7 @@
  * News Android App
  * Copyright (c) 2021 All rights reserved.
  * Created by Nurholis on 13/06/21 10.17 AM
- * Last modified 13/06/21  10.18 by Nurholis
+ * Last modified 25/06/21  23.17 by Nurholis
  */
 package com.example.sampleviewmodel.presentation.main.ui.fragment
 
