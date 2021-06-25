@@ -15,7 +15,6 @@ import java.util.*
 interface NewsRepository {
     suspend fun getNews(): Flow<PagingData<ArticlesItem>>
     suspend fun getFilter(
-        keyWord: String,
         date: Date
     ): Flow<Response>
 }

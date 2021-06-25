@@ -36,6 +36,7 @@ class NewsPagingSource (
         return try {
             val page = params.key ?: I.STARTING_PAGE_INDEX
             val response = apiServiceDataSource.getNews(
+                keyword = K.KEYWORD,
                 page = page,
                 pageSize = params.loadSize,
                 apiKey = K.API_KEY

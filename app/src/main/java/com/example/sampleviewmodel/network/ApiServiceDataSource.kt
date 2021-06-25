@@ -27,6 +27,7 @@ import java.util.*
 interface ApiServiceDataSource {
     @GET("everything")
     suspend fun getNews(
+        @Query("q") keyword: String,
         @Query("apiKey") apiKey: String,
         @Query("page") page: Int,
         @Query("pageSize") pageSize: Int
@@ -34,7 +35,6 @@ interface ApiServiceDataSource {
 
     @GET("everything")
     suspend fun getFilter (
-        @Query("q") keyword: String,
         @Query("from") date: Date,
     ): Flow<Response>
 }

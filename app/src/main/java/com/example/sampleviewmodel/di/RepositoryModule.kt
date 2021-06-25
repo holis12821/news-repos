@@ -24,4 +24,8 @@ object RepositoryModule {
     @Singleton
     fun provideServiceNewsDataSource(retrofit: Retrofit): ApiServiceDataSource
     = retrofit.create(ApiServiceDataSource::class.java)
+
+    @Provides
+    @Singleton
+    fun provideNewsRepository(dataSource: ApiServiceDataSource): NewsRepository = NewsRepositoryImpl(dataSource)
 }

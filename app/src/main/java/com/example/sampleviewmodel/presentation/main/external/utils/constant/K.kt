@@ -12,5 +12,5 @@ package com.example.sampleviewmodel.presentation.main.external.utils.constant
 object K {
     const val API_KEY = "b097fc83de084ce89c43f175d75e2818"
     const val EXTRA_SHOW_DETAIL = "detail"
-    const val KEYWORD = "songs"
+    const val KEYWORD = "music"
 }

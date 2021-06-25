@@ -8,11 +8,9 @@ import javax.inject.Inject
 
 class FilterUseCase @Inject constructor(private val newsRepository: NewsRepository) {
     suspend operator fun invoke(
-        keyword: String,
         date: Date
     ): Flow<Response> {
         return newsRepository.getFilter(
-            keyWord = keyword,
             date = date
         )
     }

@@ -33,11 +33,9 @@ class NewsRepositoryImpl @Inject constructor(
     }
 
     override suspend fun getFilter(
-        keyWord: String,
         date: Date
     ): Flow<Response> {
         return apiServiceDataSource.getFilter(
-            keyword = keyWord,
             date = date
         )
     }
