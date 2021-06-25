@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SampleViewModel</string>
+    <string name="image">image</string>
+    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="comments">1.6 Comments</string>
+    <string name="shares">50K Shares</string>
+    <string name="navigation_title">Navigation Title</string>
+    <string name="filter">filter</string>
+    <string name="timeout">Request Timeout</string>
+    <string name="retry">Retry</string>
+</resources>
