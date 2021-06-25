@@ -15,6 +15,8 @@ import com.example.sampleviewmodel.R
 import com.example.sampleviewmodel.data.model.ArticlesItem
 import com.example.sampleviewmodel.databinding.ItemNewsAdapterBinding
 import com.example.sampleviewmodel.presentation.main.external.utils.DiffUtils
+import com.example.sampleviewmodel.presentation.main.external.utils.extention.gone
+import com.example.sampleviewmodel.presentation.main.external.utils.extention.visible
 
 /**
  * Adapters representation to handle data from list in the RecyclerView
@@ -26,6 +28,15 @@ class NewsAdapter: PagingDataAdapter<ArticlesItem, NewsAdapter.NewsHolderList>(D
     ): RecyclerView.ViewHolder(binding.root) {
         fun bind(data: ArticlesItem?) {
             binding.data = data
+           if (data?.urlToImage == null && data?.url == null) {
+               binding.itemImage.gone()
+               binding.itemProfileImg.gone()
+               binding.imgLikes.gone()
+           } else {
+               binding.itemImage.visible()
+               binding.itemProfileImg.visible()
+               binding.imgLikes.visible()
+           }
         }
     }
 
