@@ -43,7 +43,6 @@
                    android:layout_width="@dimen/space_super_xlarge"
                    android:layout_height="@dimen/space_super_xlarge"
                    android:layout_alignParentStart="true"
-                   android:src="@{data.url}"
                    android:contentDescription="@string/image"
                    tools:ignore="UnusedAttribute" />
 
@@ -96,7 +95,6 @@
                android:layout_height="@dimen/space_super_xxxxxlarge"
                android:layout_marginTop="@dimen/space_medium_large"
                android:layout_marginBottom="@dimen/space_small"
-               android:src="@{data.urlToImage}"
                android:scaleType="fitXY"
                android:contentDescription="@string/image"
                tools:ignore="UnusedAttribute" />
@@ -115,7 +113,6 @@
                    android:layout_height="@dimen/space_medium_lerge"
                    android:layout_alignParentStart="true"
                    android:layout_centerVertical="true"
-                   android:src="@{data.url}"
                    android:contentDescription="@string/image"
                    tools:ignore="UnusedAttribute" />
 
